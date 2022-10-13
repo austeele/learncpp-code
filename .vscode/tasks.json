@@ -10,7 +10,19 @@
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
-                "-pedantic-errors"
+                "-pedantic-errors",
+
+                // Turn warning levels to max
+                "-Wall",
+                "-Weffc++",
+                "-Wextra",
+                "-Wsign-conversion",
+
+                // Treat warnings as errors
+                "-Werror",
+
+                // Turn on C++17 language standard
+                "-std=c++17"
             ],
             "options": {
                 "cwd": "${fileDirname}"
