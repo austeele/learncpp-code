@@ -8,7 +8,6 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
-                "input.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-pedantic-errors",
